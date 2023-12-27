@@ -3,9 +3,10 @@
 public class Player : MonoBehaviour
 {
     public float speed;
+    public Vector2 Direction { get; private set; }
 
     private Rigidbody2D rig;
-    private Vector2 direction;
+
 
     private void Start()
     {
@@ -14,12 +15,12 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        Direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
     }
 
     private void FixedUpdate()
     {
-        rig.MovePosition(rig.position + direction * speed * Time.fixedDeltaTime);
+        rig.MovePosition(rig.position + Direction * speed * Time.fixedDeltaTime);
     }
 }

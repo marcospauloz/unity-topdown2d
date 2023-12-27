@@ -33,3 +33,13 @@ in the Sprites, all of them will be checked as:
 Add Box Collider 2D without Trigger
 RigidBody with Gravity Scale set to 0 or kinematic. This will be done in order to avoid the player to fall from the map, since it is a Top Down, we will not want it to happen.
 Constraints Freeze Rotation: Z checked to avoid sprite being rotated in the scene.
+
+### Animation
+In the Animation window Create a new Animator and Animation Clip.
+After creating, Edit the sprite to follow the pattern of the sprites: Sprite Editor -> Slice: Grid By Cell Size -> 96 x 64
+For the animator -> Create an empty State as a base animator.
+Set the Base as the default animation
+Add transition between idle > base and walking > base
+Create a parameter as int to indicate when the player is stopped, idle or walking.
+Create a script for the animation of the player. This script will be responsible for changing the parameter transition setting as
+0 (idle) or 1 (walking), adding the Player Script as a reference to get access to the player properties such as the direction.
