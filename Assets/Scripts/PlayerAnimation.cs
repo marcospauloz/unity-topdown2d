@@ -21,7 +21,14 @@ public class PlayerAnimation : MonoBehaviour
     {
         if (player.Direction.sqrMagnitude > 0)
         {
-            OnWalk();
+            if (player.isRolling)
+            {
+                OnRolling();
+            }
+            else
+            {
+                OnWalk();
+            }
         }
         else
         {
@@ -49,6 +56,11 @@ public class PlayerAnimation : MonoBehaviour
     void OnIdle()
     {
         animator.SetInteger("transition", 0);
+    }
+
+    void OnRolling()
+    {
+        animator.SetTrigger("isRoll");
     }
 
     void OnRun()
