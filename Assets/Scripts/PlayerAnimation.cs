@@ -13,13 +13,19 @@ public class PlayerAnimation : MonoBehaviour
 
     void Update()
     {
+        OnMove();
+        OnRun();
+    }
+
+    void OnMove()
+    {
         if (player.Direction.sqrMagnitude > 0)
         {
-            animator.SetInteger("transition", 1);
+            OnWalk();
         }
         else
         {
-            animator.SetInteger("transition", 0);
+            OnIdle();
         }
 
         //If the player is walking to the left direction
@@ -34,4 +40,23 @@ public class PlayerAnimation : MonoBehaviour
             transform.eulerAngles = new Vector2(0, 180);
         }
     }
+
+    void OnWalk()
+    {
+        animator.SetInteger("transition", 1);
+    }
+
+    void OnIdle()
+    {
+        animator.SetInteger("transition", 0);
+    }
+
+    void OnRun()
+    {
+        if (player.isRunning)
+        {
+            animator.SetInteger("transition", 2);
+        }
+    }
+
 }

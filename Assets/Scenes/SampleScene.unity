@@ -18373,6 +18373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  runSpeed: 9
 --- !u!95 &1076411234
 Animator:
   serializedVersion: 3
