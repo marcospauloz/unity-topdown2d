@@ -43,3 +43,6 @@ Add transition between idle > base and walking > base
 Create a parameter as int to indicate when the player is stopped, idle or walking.
 Create a script for the animation of the player. This script will be responsible for changing the parameter transition setting as
 0 (idle) or 1 (walking), adding the Player Script as a reference to get access to the player properties such as the direction.
+
+### Camera
+Adding a cinemachine 2D Camera and adding the Player game object to be followed in the properties.
