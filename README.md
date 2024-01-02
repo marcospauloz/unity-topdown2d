@@ -51,3 +51,6 @@ Adding a cinemachine 2D Camera and adding the Player game object to be followed 
 ### NPC
 Creating an empty game object, adding two sprites one for the body and another for the hair.
 Creating animator for the base game object and add both sprite render -> sprite inside the animation.
+
+### Dialogue
+Creating a ScriptableObject for a New Dialogue, this will create a new option from the menu in Unity to easily create new Dialogues in the project.
