@@ -46,3 +46,8 @@ Create a script for the animation of the player. This script will be responsible
 
 ### Camera
 Adding a cinemachine 2D Camera and adding the Player game object to be followed in the properties.
+
+
+### NPC
+Creating an empty game object, adding two sprites one for the body and another for the hair.
+Creating animator for the base game object and add both sprite render -> sprite inside the animation.
