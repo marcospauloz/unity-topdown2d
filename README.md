@@ -54,3 +54,6 @@ Creating animator for the base game object and add both sprite render -> sprite 
 
 ### Dialogue
 Creating a ScriptableObject for a New Dialogue, this will create a new option from the menu in Unity to easily create new Dialogues in the project.
+
+### Dialogue window
+Creating a Canvas with image setting up to a UI Scale Mode to Scale with Screen size in order to keep the image resizeble depending on monitor resolution etc.

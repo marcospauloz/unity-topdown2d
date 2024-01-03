@@ -15,4 +15,22 @@ MonoBehaviour:
   actor: {fileID: 0}
   speakerSprite: {fileID: 0}
   sentence: 
-  sentences: []
+  sentences:
+  - actorName: NPC_1
+    profile: {fileID: 0}
+    sentence:
+      portuguese: "Ol\xE1 Aventureiro!"
+      english: 
+      spanish: 
+  - actorName: Player
+    profile: {fileID: 0}
+    sentence:
+      portuguese: "Ol\xE1! Tudo bem?"
+      english: 
+      spanish: 
+  - actorName: NPC_1
+    profile: {fileID: 0}
+    sentence:
+      portuguese: Preciso de sua ajuda! Muitos animais vem adoecendo na floresta
+      english: 
+      spanish: 
